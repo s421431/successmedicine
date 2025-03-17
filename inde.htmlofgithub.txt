@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <title>Success Medicine | Best NEET, JEE, MHT-CET Coaching in Kalyan</title>
+    <meta name="description" content="Success Medicine offers the best NEET, JEE, MHT-CET and NEET repeaters coaching in Kalyan. Expert faculty, proven results. Contact us today to achieve your medical dreams!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="successlogoo.jpg">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo-container">
+                <img src="successlogoo.jpg" alt="success Logo" class="logo-img">
+                <h5 class="logo">Success Medicine - We Create Doctors</h5>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#champions">Champions</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-pop-in">Welcome to Success Medicine</h1>
+            <p class="animate-pop-in">NEET/JEE coaching in Kalyan</p>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2 class="section-title">Our Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card animate-fade-in">
+                <i class="fas fa-heartbeat course-icon"></i>
+                <h3>NEET</h3>
+                <p>Duration: 2 Years</p>
+                <p>Comprehensive preparation for National Eligibility cum Entrance Test</p>
+            </div>
+            <div class="course-card animate-fade-in">
+                <i class="fas fa-atom course-icon"></i>
+                <h3>JEE-IIT</h3>
+                <p>Duration: 2 Years</p>
+                <p>Expert guidance for Joint Entrance Examination</p>
+            </div>
+            <div class="course-card animate-fade-in">
+                <i class="fas fa-flask course-icon"></i>
+                <h3>MHT-CET</h3>
+                <p>Duration: 2 Years</p>
+                <p>Specialized coaching for Maharashtra Common Entrance Test</p>
+            </div>
+            <div class="course-card animate-fade-in">
+                <i class="fas fa-flask course-icon"></i>
+                <h3>NEET Repeaters</h3>
+                <p>Duration: 1 Years</p>
+                <p>Comprehensive preparation for National Eligibility cum Entrance Test</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="champions" class="champions">
+        <h2 class="section-title">Meet Our Champions</h2>
+        
+        <div class="champions-container">
+            <button id="prevChampion" class="slider-btn"></button>
+
+            <div class="champions-grid">
+                <div class="champion-card animate-fade-in">
+                    <img src="Aaryan.jpg" alt="Aaryan Nandgaonkar" class="champion-photo">
+                    <h3>Aaryan Pramod Nandgaonkar</h3>
+                    <p>MBBS</p>
+                    <p>SMBT Medical College, Nashik</p>
+                </div>
+                
+                <div class="champion-card animate-fade-in">
+                    <img src="sahil.jpg" alt="tushar patil" class="champion-photo">
+                    <h3>Sahil Tushar Patil</h3>
+                    <p>NEET-UG 2024</p>
+                    <p>Score: 526/720</p>
+                </div>
+
+                <div class="champion-card animate-fade-in">
+                    <img src="shruti.jpg" alt="shruti kudtarkar" class="champion-photo">
+                    <h3>Shruti Sanjay Kudtarkar</h3>
+                    <p>BDS</p>
+                    <p>VYWS Dental College, Amravati</p>
+                </div>
+                <div class="champion-card animate-fade-in">
+                    <img src="ashmit.jpg" alt="ashmit verma" class="champion-photo">
+                    <h3>Ashmit Ashok Verma</h3>
+                    <p>BDS</p>
+                    <p>Yogita Dental College, Ratnagiri</p>
+                </div>
+                <div class="champion-card animate-fade-in">
+                    <img src="saloniRai.jpg" alt="saloni rai" class="champion-photo">
+                    <h3>Saloni Chandraprakash Raj</h3>
+                    <p>BDS</p>
+                    <p>Maharana Pratap Dental College, Madhya Pradesh</p>
+                </div>
+                <div class="champion-card animate-fade-in">
+                    <img src="vedhas.jpg" alt="vedhas mendki" class="champion-photo">
+                    <h3>Vedhas Amit Mendki</h3>
+                    <p>BVSc</p>
+                    <p>Mumbai Veterinary</p>
+                </div>
+                <div class="champion-card animate-fade-in">
+                    <img src="vaishnav.jpg" alt="vaishanav nair" class="champion-photo">
+                    <h3>Vaishnav Vinod Nair</h3>
+                    <p>BAMS</p>
+                    <p>Prasanna Ayurvedic Medical College</p>
+                </div>
+            </div>
+
+            <button id="nextChampion" class="slider-btn">></button>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2 class="section-title">Student Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"Joining 'Success Medicine's dropper batch' was the best decision I made for my NEET 2nd attempt preparation. The dedicated faculties and structured curriculum,
+                    personalized guidance from  mentors helped me to approach the exam strategically with proper time management.
+                   Comprehensive study material, updated coverages of all the essential concepts, regular mock test bought confidence for finals.   Vijay Sir and Dinesh Sir were the mentor who helped me to sail thru all my ups and downs in academics.  I am proud  1st batch of  Success Medicine and thankful to all my faculties to achieve my  dream of securing admission fo MBBS at SMBT IMS & RC, NASHIK.Thank you!"</p>
+                <p class="testimonial-author">- Aaryan Nandgaonkar</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"Success Medicine NEET classes were invaluable in my preparation. The mock tests were rigorous and pinpointed my weak areas, while the faculty's constant motivation kept me focused and confident. This combination of testing and support directly contributed to my strong NEET score."</p>
+                <p class="testimonial-author">- Sahil Patil</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"I came to know about Success Medicine during mine second drop, it was the tough and simultaneously challenging time for me but offcourse VD Sir was always there as a pillar, and last but not the least none can beat SM teachings, always thankful for it!"</p>
+                <p class="testimonial-author">- Shuti Kudtarkar</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"I joined Success medicine for just clearing my boards but Vijay Sir and Dinesh Sir paved my path towards my dream of becoming a doctor. Vijay Sir and Dinesh Sir are such mentors who helped me in my every ups and downs in my academics"</p>
+                <p class="testimonial-author">- Vaishnav Nair</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"I have joined Success Medicine during my drop year indeed and immensely it was an overwhelmed experience, in all the aspects starting from the basic teachings, test series, doubt session, revision lectures, PTM, till that particular student getting admission in the respective course; SM is always stooding up beside with every child. Forever grateful for VD Sir and for the Success Medicine Team!🩺"</p>
+                <p class="testimonial-author">- Saloni Rai</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"I had joined Success Medicine during my drop year with only 2 months left . But the professionalism exhibited by our teacher helped me cover the gap and ultimately fetch the desired result   Forever grateful for VD Sir and for the Success Medicine Team!🩺"</p>
+                <p class="testimonial-author">- Vedhas Mendki</p>
+            </div>
+            <div class="testimonial-card animate-fade-in">
+                <p class="testimonial-text">"I joined Success medicine for just clearing my boards but Vijay Sir and Dinesh Sir paved my path towards my dream of becoming a doctor. Vijay Sir and Dinesh Sir are such mentors who helped me in my every ups and downs in my academics"</p>
+                <p class="testimonial-author">- Ashmit Verma</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="faculty">
+        <h2 class="section-title">Our Expert Faculty</h2>
+        <div class="faculty-grid">
+            <div class="faculty-card animate-fade-in">
+                <div class="photo-placeholder"></div>
+                <h3>Prof. Vijay Sartape</h3>
+                <p>MSc.(Chemistry)</p>
+                <p>IIT-JAM qualified</p>
+            </div>
+            <div class="faculty-card animate-fade-in">
+                <div class="photo-placeholder"></div>
+                <h3>Prof. Dinesh Mali</h3>
+                <p>MSc.(Biology)</p>
+                <p>Jodhpur University</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-trophy"></i>
+                <h3>Proven Track Record</h3>
+                <p>Success stories of students in prestigious medical colleges</p>
+            </div>
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Expert Faculty</h3>
+                <p>Highly experienced teachers with personalized attention</p>
+            </div>
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-book"></i>
+                <h3>Comprehensive Study Material</h3>
+                <p>Well-researched materials covering entire syllabus</p>
+            </div>
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-brain"></i>
+                <h3>Smart Teaching Methodology</h3>
+                <p>Concept-based learning with regular doubt-clearing</p>
+            </div>
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-chart-line"></i>
+                <h3>Regular Assessments</h3>
+                <p>Weekly tests and detailed performance analysis</p>
+            </div>
+            <div class="feature-card animate-fade-in">
+                <i class="fas fa-clock"></i>
+                <h3>Strategic Approach</h3>
+                <p>Structured course plans and time management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-details">
+                <p><i class="fas fa-phone"></i> 9372979964 / 9769585169</p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/TfDRCNiZTZYjMhej6" target="_blank" rel="noopener noreferrer" style="color: lightblue; text-decoration: underline;">
+                        501 Sai Miracle Tower opposite to Sagar Hotel<br>Near Penkar Shivsena office, Kalyan(W)
+                    </a>
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Success Medicine. All rights reserved.</p>
+    </footer>
+    <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61573383005740" target="_blank" rel="noopener noreferrer">
+               <img src="fblogo.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/success___medicine/" target="_blank" rel="noopener noreferrer">
+                <img src="iglogo.jpg" alt="Instagram Logo">
+            </a>
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 

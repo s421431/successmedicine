@@ -2,7 +2,7 @@
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
     --accent-color: #e74c3c;
-    --text-color: #2c3e50;
+    --text-color: #05386b;
     --background-color: #f5f6fa;
     --card-background: #ffffff;
 }
@@ -11,52 +11,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    cursor: default;
+    cursor: context-menu;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 2.5;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    background-color: var(--card-background);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
+
 
 .nav-content {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Georgia', sans-serif;
 }
 
 .logo-container {
     display: flex;
     align-items: left;
-    gap: 1rem;
-    flex: 0 0 auto;
+    gap: 1rem; 
     margin-right: 2rem;
 }
 
 .logo-img {
-    width: 80px;
-    height: 80px;
+    width: 600px;
+    height: 150px;
     cursor: pointer;
 }
 
 .logo {
     font-size: 1.5rem;
     color: var(--primary-color);
-    white-space: nowrap;
 }
 
 .nav-links {
@@ -69,9 +60,10 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 900;
     transition: color 0.3s ease;
     cursor: pointer;
+    font-family: 'Georgia', sans-serif;
 }
 
 .nav-links a:hover {
@@ -81,47 +73,58 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+                url('bluelogo.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgba(250, 250, 252, 0.747);
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Georgia', sans-serif;
 }
+@import url(https://fonts.googleapis.com/css?family=Bungee+Shade:regular);
+p3{
+    font-size: 2rem ;
+  
+ }
+ p1{
+    font-size: 22px;
+    font-weight: 600; 
+    color: rgb(208, 91, 23);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+ }
+ p2{
+    font-size: 22px ;
+    font-weight: 600;
+    color: rgb(74, 131, 236);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+ } 
 
-.courses {
-    padding: 5rem 2rem;
-    background-color: var(--background-color);
+ .champions-grid h3 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(150, 4, 11);
+    font-weight: bold;
+    -webkit-text-stroke: 1.5px black;
+    -webkit-text-fill-color: rgb(178, 13, 21);
 }
 
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
-}
-
-.course-card {
-    background: var(--card-background);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    text-align: center;
-    cursor: pointer;
 }
 
 .course-card:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.274);
 }
 
 .course-icon {
@@ -131,14 +134,15 @@ body {
 }
 
 section {
-    padding: 5rem 2rem;
+    padding: 1rem 1rem;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     color: var(--primary-color);
+    font-family: 'Georgia', sans-serif;
 }
 
 .champions-grid {
@@ -156,26 +160,44 @@ section {
 
 .champions-grid::-webkit-scrollbar {
     display: none;
+    max-width: 500px;
+    max-height: 7px;
 }
 
 .champion-card {
     background: var(--card-background);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.171);
     transition: all 0.3s ease;
     text-align: center;
     cursor: pointer;
     flex: 0 0 300px;
     scroll-snap-align: start;
+    font-family: 'Georgia', sans-serif;
+    font-size:1.5rem;
+    width: 150px;
+    height: 530px;
 }
 
 .champion-card:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.808);
 }
-
-.faculty-grid, .features-grid {
+.faculty-grid h3 {
+    font-size: 29px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+}
+p4{
+    font-size: 26px ;
+    font-weight: 600;
+    color: rgb(134, 63, 35);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+    font-weight: bold;
+    -webkit-text-stroke: 1.0px black;
+    -webkit-text-fill-color: rgb(178, 13, 21);
+}
+.faculty-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -183,7 +205,7 @@ section {
     margin: 0 auto;
 }
 
-.faculty-card, .feature-card {
+.faculty-card {
     background: var(--card-background);
     padding: 2rem;
     border-radius: 10px;
@@ -191,13 +213,48 @@ section {
     transition: all 0.3s ease;
     text-align: center;
     cursor: pointer;
+    font-family: 'Georgia', sans-serif;
 }
 
-.faculty-card:hover, .feature-card:hover {
+.faculty-card:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.568);
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.features-grid h3 {
+    font-size: 26px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+    color: white;
+}
+p5{
+    font-size: 24px ;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(236, 191, 10, 0.075);
+    color: black;
 }
 
+.feature-card {
+    background: #3e6aa3;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Georgia', sans-serif;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
 .photo-placeholder {
     width: 150px;
     height: 150px;
@@ -206,6 +263,7 @@ section {
     margin: 0 auto 1rem;
     transition: transform 0.3s ease;
     cursor: pointer;
+    font-family: 'Georgia', sans-serif;
 }
 
 .photo-placeholder:hover {
@@ -215,7 +273,7 @@ section {
 .testimonials {
     background-color: var(--primary-color);
     color: white;
-    padding: 5rem 2rem;
+    padding: 1rem 1rem;;
 }
 
 .testimonial-slider {
@@ -226,12 +284,12 @@ section {
 
 .testimonial-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    margin: 1rem;
+    margin: 0rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Georgia', sans-serif;
 }
 
 .testimonial-card:hover {
@@ -242,6 +300,9 @@ section {
 .testimonial-text {
     font-style: italic;
     margin-bottom: 1rem;
+    font-family: 'Georgia', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
 }
 
 .testimonial-author {
@@ -251,6 +312,7 @@ section {
 .contact {
     background-color: var(--primary-color);
     color: white;
+
 }
 
 .contact-info {
@@ -260,8 +322,9 @@ section {
 }
 
 .contact-details {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2;
+    font-family: 'Georgia', sans-serif;
 }
 
 .contact-details i {
@@ -381,32 +444,115 @@ footer {
 .champion-photo {
     width: 150px; 
     height: 150px;
-    border-radius: 50%; 
+    border-radius:50%; 
     object-fit: cover;
     display: block;
     margin: 0 auto 10px;
     border: 3px solid #007bff; 
 }
- .social-icons {
-            text-align: center;
-            margin-top: 10px; /* Reduced margin */
-        }
+.course-card {
+    position: relative;
+    width: max-content;
+    border-radius: 10-px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.course-image {
+        max-height: 450px;
+        max-width: 270px; 
+}
+.course-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.651);
+}
 
-        .social-icons a {
-            display: inline-block;
-            margin: 0 10px;
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+.course-icon {
+    font-size: 2.5rem; 
+    color: var(--secondary-color);
+ }
+ 
+.course-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(197, 196, 196, 0.356);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
+}
 
-        .social-icons a:hover {
-            color: #ddd;
-        }
+.course-overlay h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgba(228, 63, 13, 0.815);
+    font-weight: bold;
+    -webkit-text-stroke: 1.0px black;
+    -webkit-text-fill-color: rgb(178, 13, 21);
+}
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+.course-overlay p {
+    font-size: 21px;
+    font-weight: 500;
+    font-family:'Redressed', cursive;
+    color: rgb(8, 8, 24);
+}
 
-        .social-icons img { /* Style the logo */
-        height: 24px; /* Adjust size */
-        width: auto;
-        vertical-align: middle; /* Align with the text */
-        }
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 30s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  details {
+    margin-bottom: 10px;
+  }
+body{
+    text-align: end;
+}
+

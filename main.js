@@ -1,4 +1,3 @@
-// Navbar Scroll Effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -10,7 +9,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Mobile Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -19,7 +17,6 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Smooth Scroll for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -29,7 +26,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for Animations
 const observerOptions = {
     threshold: 0.1
 };
@@ -46,7 +42,6 @@ document.querySelectorAll('.champion-card, .faculty-card, .feature-card, .course
     observer.observe(element);
 });
 
-// Simple Testimonial Slider
 let currentTestimonial = 0;
 const testimonials = document.querySelectorAll('.testimonial-card');
 
@@ -64,7 +59,6 @@ function nextTestimonial() {
 showTestimonial(0);
 setInterval(nextTestimonial, 5000);
 
-// Add touch scrolling for champions section
 const championsGrid = document.querySelector('.champions-grid');
 let isScrolling = false;
 let startX;

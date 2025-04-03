@@ -142,7 +142,11 @@ p2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301); /* Kept as per original */
     display: inline-block; /* Or block if needed */
 }
-
+p3{
+    font-size: 2rem ; /* Kept as per original */
+    /* Add font-family if needed */
+    display: block; /* Treat like block for layout */
+}
 /* --- Keep your original section/title styles --- */
 section {
     padding: 1rem 1rem; /* Kept as per original */

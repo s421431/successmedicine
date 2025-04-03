@@ -461,7 +461,7 @@ section {
 }
 
 /* Keep Original P4 Styles (Using non-standard tag) */
-p4{
+p3{
     font-size: 26px ; /* Kept as per original */
     font-weight: 600; /* Kept as per original */
     color: rgb(134, 63, 35); /* Kept as per original */
@@ -472,6 +472,7 @@ p4{
     display: block; /* Make it block level */
     line-height: 1.4; /* Improve spacing */
 }
+
 
 
 

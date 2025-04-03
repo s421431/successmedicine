@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="successlogoo.jpg">
+    <!-- Added Redressed font for course overlay as per original CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo-container">
-                <img src="successbanner.jpg" alt="success Logo" class="logo-img">
+                <!-- Make sure successlogoo.jpg is the correct filename -->
+                <img src="successlogo.jpeg" alt="Success Medicine Logo" class="logo-img">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -36,7 +39,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="animate-pop-in">Welcome to Success Medicine</h1>
-            <p3 class="animate-pop-in">We Create Doctors</p3>
+            <p3 class="animate-pop-in">We Create Doctors</p3> <!-- Note: <p3> is not a standard HTML tag, consider using <p> or <h2> -->
         </div>
     </section>
 
@@ -44,7 +47,7 @@
         <h2 class="section-title">Our Courses</h2>
         <div class="courses-grid">
             <div class="course-card animate-fade-in">
-                <img src="oucoureses.jpg" alt="NEET Course" class="course-image">
+                <img src="main logo back (2).jpeg" alt="NEET Course" class="course-image">
                 <div class="course-overlay">
                     <h3>NEET</h3>
                     <p>Duration: 2 Years</p>
@@ -52,7 +55,7 @@
                 </div>
             </div>
             <div class="course-card animate-fade-in">
-                <img src="oucoureses.jpg" alt="JEE-IIT Course" class="course-image">
+                <img src="main logo back (2).jpeg" alt="JEE-IIT Course" class="course-image">
                 <div class="course-overlay">
                     <h3>JEE-IIT</h3>
                     <p>Duration: 2 Years</p>
@@ -60,7 +63,7 @@
                 </div>
             </div>
             <div class="course-card animate-fade-in">
-                <img src="oucoureses.jpg" alt="MHT-CET Course" class="course-image">
+                <img src="main logo back (2).jpeg" alt="MHT-CET Course" class="course-image">
                 <div class="course-overlay">
                     <h3>MHT-CET</h3>
                     <p>Duration: 2 Years</p>
@@ -68,7 +71,7 @@
                 </div>
             </div>
             <div class="course-card animate-fade-in">
-                <img src="oucoureses.jpg" alt="NEET Repeaters Course" class="course-image">
+                <img src="main logo back (2).jpeg" alt="NEET Repeaters Course" class="course-image">
                 <div class="course-overlay">
                     <h3>NEET Repeaters</h3>
                     <p>Duration: 1 Year</p>
@@ -80,60 +83,59 @@
 
     <section id="champions" class="champions">
         <h2 class="section-title">Meet Our Champions</h2>
-        
         <div class="champions-container">
-            <button id="prevChampion" class="slider-btn"></button>
-
-            <div class="champions-grid">
-                <div class="champion-card animate-fade-in">
-                    <img src="Aaryan.jpg" alt="Aaryan Nandgaonkar" class="champion-photo">
-                    <h3>Aaryan Pramod Nandgaonkar</h3>
-                    <p1>MBBS</p1><br>
-                    <p2>SMBT Medical College, Nashik</p2>
-                </div>
-                
-                <div class="champion-card animate-fade-in">
-                    <img src="sahil.jpg" alt="tushar patil" class="champion-photo">
-                    <h3>Sahil Tushar Patil</h3>
-                    <p1>NEET-UG 2024</p1>
-                    <p2>Score: 526/720</p2>
-                </div>
-
-                <div class="champion-card animate-fade-in">
-                    <img src="shruti.jpg" alt="shruti kudtarkar" class="champion-photo">
-                    <h3>Shruti Sanjay Kudtarkar</h3>
-                    <p1>BDS</p1><br>
-                    <p2>VYWS Dental College, Amravati</p2>
-                </div>
-                <div class="champion-card animate-fade-in">
-                    <img src="ashmit.jpg" alt="ashmit verma" class="champion-photo">
-                    <h3>Ashmit Ashok Verma</h3>
-                    <p1>BDS</p1><br>
-                    <p2>Yogita Dental College, Ratnagiri</p2>
-                </div>
-                <div class="champion-card animate-fade-in">
-                    <img src="saloni.jpg" alt="saloni rai" class="champion-photo">
-                    <h3>Saloni Rai</h3>
-                    <p1>BDS</p1><br>
-                    <p2>Maharana Pratap Dental College, Madhya Pradesh</p2>
-                </div>
-                <div class="champion-card animate-fade-in">
-                    <img src="vedhaas.jpg" alt="vedhas mendki" class="champion-photo">
-                    <h3>Vedhas Amit Mendki</h3>
-                    <p1>BVSc</p1><br>
-                    <p2>Mumbai Veterinary</p2>
-                </div>
-                <div class="champion-card animate-fade-in">
-                    <img src="vaishnav.jpg" alt="vaishanav nair" class="champion-photo">
-                    <h3>Vaishnav Vinod Nair</h3>
-                    <p1>BAMS</p1><br>
-                    <p2>Prasanna Ayurvedic Medical College</p2>
+             <!-- Consider hiding buttons on mobile if swipe feels natural -->
+            <button id="prevChampion" class="slider-btn prev"><</button>
+            <div class="champions-grid-wrapper"> <!-- Added wrapper for overflow containment -->
+                <div class="champions-grid">
+                    <div class="champion-card animate-fade-in">
+                        <img src="Aaryan.jpg" alt="Aaryan Nandgaonkar" class="champion-photo">
+                        <h3>Aaryan Pramod Nandgaonkar</h3>
+                        <p1>MBBS</p1><br> <!-- Note: <p1>, <p2> etc are not standard tags -->
+                        <p2>SMBT Medical College, Nashik</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="sahil.jpg" alt="tushar patil" class="champion-photo">
+                        <h3>Sahil Tushar Patil</h3>
+                        <p1>NEET-UG 2024</p1>
+                        <p2>Score: 526/720</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="shruti.jpg" alt="shruti kudtarkar" class="champion-photo">
+                        <h3>Shruti Sanjay Kudtarkar</h3>
+                        <p1>BDS</p1><br>
+                        <p2>VYWS Dental College, Amravati</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="ashmit.jpg" alt="ashmit verma" class="champion-photo">
+                        <h3>Ashmit Ashok Verma</h3>
+                        <p1>BDS</p1><br>
+                        <p2>Yogita Dental College, Ratnagiri</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="saloni.jpg" alt="saloni rai" class="champion-photo">
+                        <h3>Saloni Rai</h3>
+                        <p1>BDS</p1><br>
+                        <p2>Maharana Pratap Dental College, Madhya Pradesh</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="vedhaas.jpg" alt="vedhas mendki" class="champion-photo">
+                        <h3>Vedhas Amit Mendki</h3>
+                        <p1>BVSc</p1><br>
+                        <p2>Mumbai Veterinary</p2>
+                    </div>
+                    <div class="champion-card animate-fade-in">
+                        <img src="vaishnav.jpg" alt="vaishanav nair" class="champion-photo">
+                        <h3>Vaishnav Vinod Nair</h3>
+                        <p1>BAMS</p1><br>
+                        <p2>Prasanna Ayurvedic Medical College</p2>
+                    </div>
                 </div>
             </div>
-
-            <button id="nextChampion" class="slider-btn">></button>
+            <button id="nextChampion" class="slider-btn next">></button>
         </div>
     </section>
+
     <section id="testimonials" class="testimonials">
         <h2 class="section-title">Student Testimonials</h2>
         <div class="testimonial-slider">
@@ -169,21 +171,22 @@
             </div>
         </div>
     </section>
-
     <section id="faculty" class="faculty">
         <h2 class="section-title">Our Expert Faculty</h2>
         <div class="faculty-grid">
             <div class="faculty-card animate-fade-in">
-                <div class="photo-placeholder"></div>
+                <!-- Consider adding actual images -->
+                <div class="photo-placeholder"><i class="fas fa-user-tie fa-4x"></i></div> <!-- Placeholder Icon -->
                 <h3>Prof. Vijay Sartape</h3>
-                <p4>MSc.(Chemistry)</p4>
-                <p4>IIT-JAM qualified</p4>
+                <p>MSc.(Chemistry)</p> <!-- Use standard <p> tags -->
+                <p>IIT-JAM qualified</p>
             </div>
             <div class="faculty-card animate-fade-in">
-                <div class="photo-placeholder"></div>
+                 <!-- Consider adding actual images -->
+                <div class="photo-placeholder"><i class="fas fa-user-graduate fa-4x"></i></div> <!-- Placeholder Icon -->
                 <h3>Prof. Dinesh Mali</h3>
-                <p4>MSc.(Biology)</p4>
-                <p4>Jodhpur University</p4>
+                <p>MSc.(Biology)</p> <!-- Use standard <p> tags -->
+                <p>Jodhpur University</p>
             </div>
         </div>
     </section>
@@ -192,48 +195,51 @@
         <h2 class="section-title">Why Choose Us</h2>
         <div class="features-grid">
             <div class="feature-card animate-fade-in">
-                <i class="fas fa-trophy"></i>
+                <i class="fas fa-trophy fa-2x"></i> <!-- Increased icon size -->
                 <h3>Proven Track Record</h3>
-                <p5>Success stories of students in prestigious medical colleges</p5>
+                <p>Success stories of students in prestigious medical colleges</p> <!-- Use standard <p> tags -->
             </div>
             <div class="feature-card animate-fade-in">
-                <i class="fas fa-chalkboard-teacher"></i>
+                <i class="fas fa-chalkboard-teacher fa-2x"></i> <!-- Increased icon size -->
                 <h3>Expert Faculty</h3>
-                <p5>Highly experienced teachers with personalized attention</p5>
+                <p>Highly experienced teachers with personalized attention</p>
             </div>
             <div class="feature-card animate-fade-in">
-                <i class="fas fa-book"></i>
+                <i class="fas fa-book fa-2x"></i> <!-- Increased icon size -->
                 <h3>Study Material</h3>
-                <p5>Well-researched materials covering entire syllabus</p5>
+                <p>Well-researched materials covering entire syllabus</p>
             </div>
-            <div class="feature-card animate-fade-in">
-                <i class="fas fa-brain"></i>
+             <div class="feature-card animate-fade-in">
+                <i class="fas fa-brain fa-2x"></i> <!-- Increased icon size -->
                 <h3>Smart Teaching</h3>
-                <p5>Concept-based learning with regular doubt-clearing</p5>
+                <p>Concept-based learning with regular doubt-clearing</p>
             </div>
             <div class="feature-card animate-fade-in">
-                <i class="fas fa-chart-line"></i>
+                <i class="fas fa-chart-line fa-2x"></i> <!-- Increased icon size -->
                 <h3>Regular Assessments</h3>
-                <p5>Weekly tests and detailed performance analysis</p5>
+                <p>Weekly tests and detailed performance analysis</p>
             </div>
             <div class="feature-card animate-fade-in">
-                <i class="fas fa-clock"></i>
+                <i class="fas fa-clock fa-2x"></i> <!-- Increased icon size -->
                 <h3>Strategic Approach</h3>
-                <p5>Structured course plans and time management</p5>
+                <p>Structured course plans and time management</p>
             </div>
         </div>
-        <div class="banner">
-            <div class="slider" style="--quantity: 10">
-                <div class="item" style="--position: 1"><img src="image1.jpg" alt="image 1"></div>
-                <div class="item" style="--position: 2"><img src="image2.jpg" alt="image2"></div>
-                <div class="item" style="--position: 3"><img src="image3.jpg" alt="image3"></div>
-                <div class="item" style="--position: 4"><img src="image4.jpg" alt="image4"></div>
-                <div class="item" style="--position: 5"><img src="image5.jpg" alt="image5"></div>
-                <div class="item" style="--position: 6"><img src="image6.jpg" alt="image6"></div>
-                <div class="item" style="--position: 7"><img src="image7.jpg" alt="image7"></div>
-                <div class="item" style="--position: 8"><img src="image8.png" alt="image8"></div>
-                <div class="item" style="--position: 9"><img src="image9.png" alt="image9"></div>
-                <div class="item" style="--position: 10"><img src="image10.jpg" alt="image10"></div>
+         <!-- Image Banner Section - Adjusted for potential mobile issues -->
+        <div class="banner-container"> <!-- Added a container -->
+            <div class="banner">
+                 <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="image1.jpeg" alt="Gallery image 1"></div>
+                    <div class="item" style="--position: 2"><img src="image2.jpeg" alt="Gallery image 2"></div>
+                    <div class="item" style="--position: 3"><img src="image3.jpeg" alt="Gallery image 3"></div>
+                    <div class="item" style="--position: 4"><img src="image4.jpeg" alt="Gallery image 4"></div>
+                    <div class="item" style="--position: 5"><img src="image5.jpeg" alt="Gallery image 5"></div>
+                    <div class="item" style="--position: 6"><img src="image6.jpeg" alt="Gallery image 6"></div>
+                    <div class="item" style="--position: 7"><img src="image7.jpeg" alt="Gallery image 7"></div>
+                    <div class="item" style="--position: 8"><img src="image8.jpeg" alt="Gallery image 8"></div>
+                    <div class="item" style="--position: 9"><img src="image9.jpeg" alt="Gallery image 9"></div>
+                    <div class="item" style="--position: 10"><img src="image10.jpeg" alt="Gallery image 10"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -242,21 +248,24 @@
         <h2 class="section-title">Contact Us</h2>
         <div class="contact-info">
             <div class="contact-details">
-                <p><i class="fas fa-phone"></i> 9372979964 / 9769585169 / 7710900877</p>
-                <p>
+                <p><i class="fas fa-phone"></i> <a href="tel:9372979964">9372979964</a> / <a href="tel:9769585169">9769585169</a> / <a href="tel:7710900877">7710900877</a></p>
+                 <p>
                     <i class="fas fa-map-marker-alt"></i>
-                    <a href="https://maps.app.goo.gl/TfDRCNiZTZYjMhej6" target="_blank" rel="noopener noreferrer" style="color: lightblue; text-decoration: underline;">
+                     <!-- Link styling moved to CSS -->
+                    <a href="https://maps.app.goo.gl/TfDRCNiZTZYjMhej6" target="_blank" rel="noopener noreferrer">
                         501 Sai Miracle Tower opposite to Sagar Hotel<br>Near Penkar Shivsena office, Kalyan(W)
                     </a>
-                  </p>
+                 </p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Â© 2025 Success Medicine. All rights reserved.</p>
+        <!-- Corrected copyright symbol -->
+        <p>© 2025 Success Medicine. All rights reserved.</p>
     </footer>
 
     <script src="main.js"></script>
+     <!-- Ensure main.js handles hamburger toggle and sliders -->
 </body>
-</html> 
+</html>

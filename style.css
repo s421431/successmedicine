@@ -1,4 +1,3 @@
-/* --- START: Your Original CSS --- */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
@@ -8,631 +7,272 @@
     --card-background: #ffffff;
 }
 
-* { /* Keep the universal selector minimal for this requirement */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: context-menu; /* Kept as per original */
+    cursor: context-menu;
 }
 
-/* --- Keep your original body styles --- */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 2.5; /* Kept as per original */
-    /* font-family needs to be inherited or set if Montserrat isn't default */
-    font-family: 'Montserrat', sans-serif; /* Ensure base font is set */
-    text-align: end; /* Kept as per original - NOTE: This might cause layout issues */
+    line-height: 2.5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: end;
 }
 
-
-/* --- Keep your original nav styles --- */
 .navbar {
-    /* Add sticky positioning for better UX */
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--card-background); /* Ensure background for sticky */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */
+    background-color: var(--card-background);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-content {
-    max-width: 2000px; /* Kept as per original */
+    max-width: 2000px;
     margin: 0 auto;
-    padding: 0.2rem; /* Kept as per original */
+    padding: 0.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
+    font-family: 'Georgia', sans-serif;
 }
 
 .logo-container {
     display: flex;
-    align-items: left; /* Kept as per original */
-    gap: 1rem; /* Kept as per original */
-    margin-right: 2rem; /* Kept as per original */
+    align-items: left;
+    gap: 1rem;
+    margin-right: 2rem;
 }
 
 .logo-img {
-    width: 600px; /* Kept as per original */
-    height: 150px; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
+    width: 600px;
+    height: 150px;
+    cursor: pointer;
 }
 
 .logo {
-    font-size: 1.5rem; /* Kept as per original */
-    color: var(--primary-color); /* Kept as per original */
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem; /* Kept as per original */
-    margin-left: auto; /* Kept as per original */
+    gap: 2rem;
+    margin-left: auto;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color); /* Kept as per original */
-    font-weight: 900; /* Kept as per original */
-    transition: color 0.3s ease; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
+    color: var(--text-color);
+    font-weight: 900;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-family: 'Georgia', sans-serif;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color); /* Kept as per original */
+    color: var(--secondary-color);
 }
 
-/* --- Hamburger Icon Base Styles (Hidden on Desktop) --- */
 .hamburger {
-    display: none; /* Hide on desktop */
+    display: none;
     cursor: pointer;
-    padding: 10px; /* Add padding for easier tapping */
-    margin-left: 1rem; /* Space from nav links if they were visible */
+    padding: 10px;
+    margin-left: 1rem;
 }
 
 .hamburger span {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--text-color); /* Kept color */
+    background-color: var(--text-color);
     margin: 5px 0;
     transition: 0.3s;
 }
 
-/* --- Keep your original hero styles --- */
 .hero {
-    height: 100vh; /* Kept as per original */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('main\ logo\ back.jpeg'); /* Kept as per original */
-    background-size: cover; /* Kept as per original */
-    background-position: center; /* Kept as per original */
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('main logo back.jpeg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Kept as per original */
-    color: rgba(250, 250, 252, 0.747); /* Kept as per original */
-    padding: 1rem; /* Add some padding */
+    text-align: center;
+    color: rgba(250,250,252,0.747);
+    padding: 1rem;
 }
 
 .hero-content h1 {
-    font-size: 4rem; /* Kept as per original */
-    margin-bottom: 0.2rem; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Georgia', sans-serif;
 }
 
-/* Keep your P3, P1, P2 Styles (Using non-standard tags as in original) */
-p3{
-    font-size: 2rem ; /* Kept as per original */
-    /* Add font-family if needed */
-    display: block; /* Treat like block for layout */
+p1, p2, p3, p4 {
+    display: block;
 }
-p1{
-    font-size: 22px; /* Kept as per original */
-    font-weight: 600; /* Kept as per original */
-    color: rgb(208, 91, 23); /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301); /* Kept as per original */
-    display: inline-block; /* Or block if needed */
+
+p1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(208, 91, 23);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
-p2{
-    font-size: 22px ; /* Kept as per original */
-    font-weight: 600; /* Kept as per original */
-    color: rgb(74, 131, 236); /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301); /* Kept as per original */
-    display: inline-block; /* Or block if needed */
+
+p2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(74,131,236);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
-p3{
-    font-size: 2rem ; /* Kept as per original */
-    /* Add font-family if needed */
-    display: block; /* Treat like block for layout */
+
+p3 {
+    font-size: 2rem;
 }
-/* --- Keep your original section/title styles --- */
+
+p4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(178,13,21);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
 section {
-    padding: 1rem 1rem; /* Kept as per original */
-    /* Add overflow-x: hidden; to prevent horizontal scroll from animations/margins */
+    padding: 1rem;
     overflow-x: hidden;
 }
 
 .section-title {
-    text-align: center; /* Kept as per original */
-    font-size: 3rem; /* Kept as per original */
-    margin-bottom: 1rem; /* Kept as per original */
-    color: var(--primary-color); /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: 'Georgia', sans-serif;
 }
 
-/* --- Courses Section --- */
-.courses-grid {
-    display: grid; /* Kept as per original */
-    /* Use original grid setup */
+.courses-grid, .faculty-grid, .features-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; /* Add gap for spacing */
-    max-width: 1700px; /* Limit width */
-    margin: 0 auto; /* Center grid */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Keep Original Course Card Styles */
-.course-card {
-    position: relative;
-    /* width: max-content; */ /* Avoid max-content, let grid control width */
-    border-radius: 10px; /* Corrected typo */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Kept as per original */
-    text-align: center; /* Kept as per original */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Combine transitions */
-    overflow: hidden; /* Contain image/overlay */
+.course-card, .faculty-card, .feature-card, .champion-card {
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-card:hover, .faculty-card:hover, .feature-card:hover, .champion-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.6);
 }
 
 .course-image {
-    /* Adjustments for responsiveness */
-    max-width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space */
-    /* Keep original max height if desired, but max-width is safer */
-    /* max-height: 450px; */
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.course-card:hover {
-    transform: translateY(-5px) scale(1.02); /* Kept as per original */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.651); /* Kept as per original */
-}
-
-.course-icon { /* Keep if used elsewhere */
-    font-size: 2.5rem; /* Kept as per original */
-    color: var(--secondary-color); /* Kept as per original */
-    margin-bottom: 1rem; /* Add margin if needed */
-}
-
-/* Keep Original Course Overlay Styles */
 .course-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(197, 196, 196, 0.356); /* Kept as per original */
+    background: rgba(197,196,196,0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* font-weight: 100; */ /* Kept as per original (very light) */
-    padding: 10px; /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205); /* Kept as per original */
-    color: rgb(8, 8, 24); /* Set base color for overlay text */
-}
-.course-card:hover .course-overlay {
-    opacity: 100; /* Show overlay on hover */
+    padding: 10px;
+    color: rgb(8,8,24);
 }
 
 .course-overlay h3 {
-    font-size: 32px; /* Kept as per original */
-    margin-bottom: 10px; /* Kept as per original */
-    font-family:Georgia, 'Times New Roman', Times, serif; /* Kept as per original */
-    color: rgba(228, 63, 13, 0.815); /* Kept as per original */
-    font-weight: bold; /* Kept as per original */
-    -webkit-text-stroke: 1.0px black; /* Kept as per original */
-    -webkit-text-fill-color: rgb(178, 13, 21); /* Kept as per original */
+    font-size: 32px;
+    color: rgba(228,63,13,0.8);
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: rgb(178,13,21);
 }
 
-/* Ensure Redressed font is linked in HTML */
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 .course-overlay p {
-    font-size: 21px; /* Kept as per original */
-    font-weight: 500; /* Kept as per original */
-    font-family:'Redressed', cursive; /* Kept as per original */
-    color: rgb(8, 8, 24); /* Kept as per original */
-    line-height: 1.3; /* Improve readability */
+    font-size: 21px;
+    font-family: 'Redressed', cursive;
+    line-height: 1.3;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
-/* --- Champions Section --- */
-.champions-container {
-    position: relative; /* For button positioning */
-    max-width: 1200px; /* Add max width */
-    margin: 0 auto; /* Center */
-    padding: 0 40px; /* Space for buttons */
-}
-
-/* Add a wrapper for overflow */
 .champions-grid-wrapper {
-    overflow-x: auto; /* Enable horizontal scroll */
-    scroll-snap-type: x mandatory; /* Snap scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    scrollbar-width: none; /* Hide scrollbar (Firefox) */
-    -ms-overflow-style: none; /* Hide scrollbar (IE/Edge) */
-    padding-bottom: 1rem; /* Space below cards */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .champions-grid-wrapper::-webkit-scrollbar {
-    display: none; /* Hide scrollbar (Chrome/Safari/Opera) */
-}
-
-.champions-grid {
-    display: flex; /* Use flexbox */
-    gap: 2rem; /* Kept as per original */
-    width: max-content; /* Allow grid to expand */
-    padding: 1rem 0.5rem; /* Padding inside the scrollable area */
-    /* Removed scroll-snap-type, overflow, scrollbar hiding -> moved to wrapper */
-    /* scroll-behavior: smooth; */ /* Handled by JS/Buttons */
-}
-
-
-/* Keep Original Champion Card Styles */
-.champion-card {
-    background: var(--card-background); /* Kept as per original */
-    padding: 2rem; /* Kept as per original */
-    border-radius: 10px; /* Kept as per original */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.171); /* Kept as per original */
-    transition: all 0.3s ease; /* Kept as per original */
-    text-align: center; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    flex: 0 0 300px; /* Kept original fixed width */
-    scroll-snap-align: start; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
-    /* font-size:1.5rem; */ /* Base font size on card (kept as per original) */
-    /* width: 150px; */ /* Overridden by flex-basis */
-    /* height: 530px; */ /* Avoid fixed height, let content define it */
-    min-height: 530px; /* Use min-height if fixed size was intended */
-}
-
-.champion-card:hover {
-    transform: translateY(-5px) scale(1.02); /* Kept as per original */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.808); /* Kept as per original */
+    display: none;
 }
 
 .champion-photo {
-    width: 150px; /* Kept as per original */
-    height: 150px; /* Kept as per original */
-    border-radius:50%; /* Kept as per original */
-    object-fit: cover; /* Kept as per original */
-    display: block; /* Kept as per original */
-    margin: 0 auto 10px; /* Kept as per original */
-    border: 3px solid #007bff; /* Kept as per original */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
 }
 
-.champions-grid h3 { /* Styles specific h3 inside this grid */
-    font-size: 29px; /* Kept as per original */
-    margin-bottom: 10px; /* Kept as per original */
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Kept as per original */
-    color: rgb(150, 4, 11); /* Kept as per original */
-    font-weight: bold; /* Kept as per original */
-    -webkit-text-stroke: 1.5px black; /* Kept as per original */
-    -webkit-text-fill-color: rgb(178, 13, 21); /* Kept as per original */
-}
-
-/* Keep Original Slider Button Styles */
-.slider-btn {
-    /* Positioning handled within container */
-    background-color: var(--secondary-color); /* Kept as per original */
-    color: white; /* Kept as per original */
-    border: none; /* Kept as per original */
-    padding: 0.5rem 1rem; /* Kept as per original */
-    font-size: 1.5rem; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    border-radius: 5px; /* Kept as per original */
-    transition: background 0.3s ease; /* Kept as per original */
-    position: absolute; /* Position relative to container */
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-.slider-btn:hover {
-    background-color: var(--accent-color); /* Kept as per original */
-}
-/* Specific button positioning */
-#prevChampion { left: 5px; } /* Position inside padding */
-#nextChampion { right: 5px; } /* Position inside padding */
-/* Use specific button IDs/classes if needed */
-#prevChampion::before { content: '<'; } /* Use content for arrows */
-#nextChampion::before { content: '>'; }
-
-
-/* --- Testimonials Section --- */
-/* Keep Original Testimonials Section Styles */
-.testimonials {
-    background-color: var(--primary-color); /* Kept as per original */
-    color: white; /* Kept as per original */
-    padding: 1rem 1rem; /* Kept as per original */
-}
-
-.testimonials .section-title {
-     color: white; /* Adjust title color for dark bg */
-}
-
-.testimonial-slider {
-    max-width: 800px; /* Kept as per original */
-    margin: 0 auto; /* Kept as per original */
-    position: relative; /* Kept as per original */
-    /* Layout for multiple cards */
-    display: grid;
-    grid-template-columns: 1fr; /* Stack them by default */
-    gap: 1.5rem; /* Add space between cards */
-}
-
-/* Keep Original Testimonial Card Styles */
-.testimonials {
+.testimonials, .contact, footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 1rem;;
-}
-
-.testimonial-slider {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+    padding: 1rem;
+    text-align: center;
 }
 
 .testimonial-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
     border-radius: 10px;
     text-align: center;
-    margin: 0rem;
-    cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Georgia', sans-serif;
 }
 
 .testimonial-card:hover {
+    background: rgba(255,255,255,0.15);
     transform: translateY(-5px) scale(1.02);
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 1rem;
-    font-family: 'Georgia', sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-}
-
-.testimonial-author {
-    font-weight: bold;
-}
-/* --- Faculty Section --- */
-/* Keep Original Faculty Grid Styles */
-.faculty-grid {
-    display: grid; /* Kept as per original */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kept as per original */
-    gap: 2rem; /* Kept as per original */
-    max-width: 1200px; /* Kept as per original */
-    margin: 0 auto; /* Kept as per original */
-}
-
-/* Keep Original Faculty Card Styles */
-.faculty-card {
-    background: var(--card-background); /* Kept as per original */
-    padding: 2rem; /* Kept as per original */
-    border-radius: 10px; /* Kept as per original */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kept as per original */
-    transition: all 0.3s ease; /* Kept as per original */
-    text-align: center; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
-}
-
-.faculty-card:hover {
-    transform: translateY(-5px) scale(1.02); /* Kept as per original */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.568); /* Kept as per original */
-}
-
-.photo-placeholder {
-    width: 150px; /* Kept as per original */
-    height: 150px; /* Kept as per original */
-    background-color: #ddd; /* Kept as per original */
-    border-radius: 50%; /* Kept as per original */
-    margin: 0 auto 1rem; /* Kept as per original */
-    transition: transform 0.3s ease; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
-    /* Added flex to center potential icon */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.photo-placeholder:hover {
-    transform: scale(1.1); /* Kept as per original */
-}
-
-.faculty-grid h3 { /* Style h3 within faculty grid */
-    font-size: 29px; /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301); /* Kept as per original */
-    margin-bottom: 0.5rem; /* Add margin */
-    color: var(--text-color); /* Ensure color is set */
-}
-
-/* Keep Original P4 Styles (Using non-standard tag) */
-p4{
-    font-size: 26px ; /* Kept as per original */
-    font-weight: 600; /* Kept as per original */
-    color: rgb(134, 63, 35); /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301); /* Kept as per original */
-    font-weight: bold; /* Kept as per original */
-    -webkit-text-stroke: 1.0px black; /* Kept as per original */
-    -webkit-text-fill-color: rgb(178, 13, 21); /* Kept as per original */
-    display: block; /* Make it block level */
-    line-height: 1.4; /* Improve spacing */
-}
-
-
-
-
-.features-grid {
-    display: grid; /* Kept as per original */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Kept as per original */
-    gap: 2rem; /* Kept as per original */
-    max-width: 1200px; /* Kept as per original */
-    margin: 0 auto; /* Kept as per original */
-    /* color: white; */ /* Removed - color set in feature-card */
-}
-
-/* Keep Original Feature Card Styles */
-.feature-card {
-    background: #3e6aa3; /* Kept as per original */
-    padding: 1rem; /* Kept as per original */
-    border-radius: 10px; /* Kept as per original */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Kept as per original */
-    transition: all 0.3s ease; /* Kept as per original */
-    text-align: center; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
-    color: white; /* Ensure text is white */
-}
-
-.feature-card:hover {
-    transform: translateY(-5px) scale(1.02); /* Kept as per original */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Kept as per original */
-}
-
-.feature-card i {
-    font-size: 2rem; /* Slightly larger icons */
-    margin-bottom: 1rem; /* Space below icon */
-    display: block; /* Ensure block */
-}
-
-.features-grid h3 { /* Style h3 within features grid */
-    font-size: 26px; /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219); /* Kept as per original */
-    color: white; /* Kept as per original */
-    margin-bottom: 0.5rem; /* Add margin */
-}
-
-/* Keep Original P5 Styles (Using non-standard tag) */
-p{
-    font-size: 20px ; /* Kept as per original */
-    font-weight: 200; /* Kept as per original */
-    text-shadow: 2px 2px 4px rgba(236, 191, 10, 0.075); /* Kept as per original */
-    color: rgb(248, 245, 245); /* Kept as per original */
-    display: block; /* Make block */
-    line-height: 1.4; /* Improve spacing */
-}
-
-/* --- Image Banner Section --- */
-.banner-container { /* Add container for better control */
-    max-width: 100%;
-    margin-top: 3rem; /* Space above banner */
-    padding: 2rem 0;
-    overflow: hidden; /* Prevent horizontal overflow */
-}
-/* Keep Original Banner Styles */
-.banner{
-    width: 100%;
-    height: 100vh; /* Kept as per original */
-    text-align: center;
-    overflow: hidden; /* Kept as per original */
-    position: relative; /* Kept as per original */
-    margin: 0 auto;
-}
-
-.banner .slider{
-    position: absolute; /* Kept as per original */
-    width: 250px; /* Kept as per original */
-    height: 250px; /* Kept as per original */
-    top: 10%; /* Kept as per original */
-    left: calc(50% - 125px); /* Corrected centering */
-    transform-style: preserve-3d; /* Kept as per original */
-    transform: perspective(1000px); /* Kept as per original */
-    animation: autoRun 30s linear infinite; /* Kept as per original */
-    z-index: 2; /* Kept as per original */
-}
-
-@keyframes autoRun{
-    from{
-        transform: perspective(1000px) rotateX(-10deg) rotateY(0deg); /* Kept as per original */
-    }to{
-        transform: perspective(1000px) rotateX(-10deg) rotateY(360deg); /* Kept as per original */
-    }
-}
-
-.banner .slider .item{
-    position: absolute; /* Kept as per original */
-    inset: 0 0 0 0; /* Kept as per original */
-    transform:
-    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-    translateZ(550px); /* Kept as per original */
-}
-
-.banner .slider .item img{
-    width: 100%; /* Kept as per original */
-    height: 100%; /* Kept as per original */
-    object-fit: fill; /* Kept as per original */
-}
-
-/* --- Contact Section --- */
-/* Keep Original Contact Section Styles */
-.contact {
-    background-color: var(--primary-color); /* Kept as per original */
-    color: white; /* Kept as per original */
-    padding: 2rem 1rem; /* Add padding */
-}
-
-.contact .section-title {
-    color: white; /* Adjust title color */
-}
-
-.contact-info {
-    max-width: 800px; /* Kept as per original */
-    margin: 0 auto; /* Kept as per original */
-    text-align: center; /* Kept as per original */
 }
 
 .contact-details {
-    font-size: 1.5rem; /* Kept as per original */
-    line-height: 2; /* Kept as per original */
-    font-family: 'Georgia', sans-serif; /* Kept as per original */
+    font-size: 1.5rem;
+    line-height: 2;
+    font-family: 'Georgia', sans-serif;
 }
 
-.contact-details p {
-    margin-bottom: 1rem; /* Add space */
-}
-
-.contact-details i {
-    margin-right: 10px; /* Kept as per original */
-    color: var(--secondary-color); /* Kept as per original */
-}
-
-/* Keep Original Contact Link Styles */
 .contact-details a {
-    color: lightblue; /* Kept as per original */
-    text-decoration: underline; /* Kept as per original */
-    /* Add hover effect if desired */
-     transition: color 0.3s ease;
+    color: lightblue;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
+
 .contact-details a:hover {
-    color: white; /* Example hover */
+    color: white;
 }
 
-
-/* --- Footer --- */
-/* Keep Original Footer Styles */
 footer {
-    background-color: var(--primary-color); /* Kept as per original */
-    color: white; /* Kept as per original */
-    text-align: center; /* Kept as per original */
-    padding: 1rem; /* Kept as per original */
+    padding: 1rem;
 }
 
-
-/* --- Keep Original Animations --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -644,286 +284,15 @@ footer {
     100% { opacity: 1; transform: scale(1); }
 }
 
-@keyframes rotate { /* Keep if used */
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+.animate-pop-in { animation: popIn 0.6s cubic-bezier(0.17,0.67,0.83,0.67) forwards; }
+
+@media (max-width: 768px) {
+    body { text-align: left; line-height: 1.8; }
+    .nav-links { display: none; flex-direction: column; background: var(--card-background); position: absolute; width: 100%; top: 100%; left: 0; }
+    .nav-links.active { display: flex; }
+    .hamburger { display: block; }
+    .courses-grid, .faculty-grid, .features-grid { grid-template-columns: 1fr; }
+    .hero { height: 60vh; }
+    footer { padding: 1rem; }
 }
-
-.animate-fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards; /* Kept as per original */
-}
-
-.animate-pop-in {
-    opacity: 0;
-    animation: popIn 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards; /* Kept as per original */
-}
-
-/* --- Details/Summary Styles (If Used) --- */
-summary {
-    font-weight: bold; /* Kept as per original */
-    cursor: pointer; /* Kept as per original */
-}
-
-details {
-    margin-bottom: 10px; /* Kept as per original */
-}
-
-/* --- END: Your Original CSS --- */
-
-
-/* =========================================== */
-/* === START: Mobile Responsive Adjustments === */
-/* =========================================== */
-
-@media (max-width: 1024px) { /* Adjustments for tablets and smaller desktops */
-    .logo-img {
-         width: 450px; /* Slightly smaller logo */
-         height: auto; /* Maintain aspect ratio */
-    }
-    .nav-links {
-        gap: 1rem; /* Reduce gap between links */
-    }
-     .banner {
-         height: 80vh; /* Reduce banner height */
-    }
-    .banner .slider {
-        width: 220px;
-        height: 220px;
-        left: calc(50% - 110px); /* Recenter */
-    }
-    .banner .slider .item {
-         transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(450px); /* Bring closer */
-    }
-}
-
-
-@media (max-width: 768px) { /* --- Mobile Specific Styles --- */
-
-    /* --- General Layout --- */
-    body {
-        line-height: 1.8; /* Slightly adjust line-height for mobile if needed */
-        text-align: left; /* Override body text-align: end for mobile */
-    }
-    section {
-        padding: 1.5rem 1rem; /* Reduce section padding */
-    }
-     .section-title {
-         /* Keep font-size, but maybe reduce margin */
-         margin-bottom: 1.5rem;
-     }
-
-    /* --- Navigation --- */
-    .nav-content {
-        padding: 0.5rem 1rem; /* Adjust padding */
-        position: relative; /* Needed for absolute positioning of nav-links */
-    }
-
-    .logo-img {
-        width: 280px; /* Further reduce logo size */
-        height: auto;
-        margin-right: 1rem; /* Reduce margin */
-    }
-
-    .nav-links {
-        display: none; /* Hide links by default */
-        position: absolute;
-        top: 100%; /* Position below navbar */
-        left: 0;
-        width: 100%;
-        background: var(--card-background); /* Use card background */
-        flex-direction: column; /* Stack links vertically */
-        align-items: stretch; /* Stretch items */
-        padding: 0; /* Reset padding */
-        margin-left: 0; /* Reset margin */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
-        border-top: 1px solid #eee; /* Separator line */
-        gap: 0; /* Reset gap */
-        z-index: 999; /* Below navbar but above content */
-    }
-
-    .nav-links.active {
-        display: flex; /* Show links when active */
-    }
-
-    .nav-links li {
-        width: 100%; /* Make list items full width */
-        text-align: center; /* Center text */
-        border-bottom: 1px solid #f0f0f0; /* Separator */
-    }
-    .nav-links li:last-child {
-        border-bottom: none; /* Remove last border */
-    }
-
-    .nav-links a {
-        display: block; /* Make links block level */
-        padding: 1rem; /* Larger touch target */
-        width: 100%;
-        /* Keep original font/color/hover styles */
-    }
-    .nav-links a:hover {
-        /* Keep original hover color */
-         background-color: #f8f8f8; /* Add subtle background hover */
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger */
-        margin-left: auto; /* Push to the right */
-    }
-
-    /* Hamburger animation ('X' shape) */
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
-
-    /* --- Hero Section (Mobile) --- */
-    .hero {
-        height: 60vh; /* Shorter hero */
-        /* Keep original text styles */
-    }
-    /* Keep hero h1 and p3 styles */
-
-    /* --- Grids (Mobile) --- */
-    /* Adjust grids to stack elements */
-    .courses-grid,
-    .faculty-grid,
-    .features-grid {
-        grid-template-columns: 1fr; /* Single column */
-        gap: 1.5rem; /* Adjust gap */
-        max-width: 500px; /* Limit max width for single column */
-    }
-    .testimonial-slider {
-        grid-template-columns: 1fr; /* Already single column */
-        gap: 1.5rem;
-        max-width: 500px;
-    }
-
-    /* --- Champions Section (Mobile) --- */
-    .champions-container {
-        padding: 0 1rem; /* Reduce side padding */
-    }
-    .champion-card {
-        flex-basis: 260px; /* Slightly smaller fixed width if needed */
-        min-height: auto; /* Let height be auto */
-        padding: 1.5rem; /* Reduce padding */
-        scroll-snap-align: center; /* Center snap */
-    }
-     .champions-grid {
-        gap: 1rem; /* Reduce gap */
-        padding: 1rem 0.5rem;
-    }
-    /* Adjust button positions */
-    .slider-btn {
-         padding: 0.4rem 0.8rem; /* Smaller padding */
-         /* Keep font size */
-         /* Keep colors */
-    }
-     #prevChampion { left: -5px; } /* Adjust position */
-     #nextChampion { right: -5px; }
-
-    /* --- Specific Card Content Adjustments (Layout Only) --- */
-     .champion-photo {
-        width: 120px; /* Slightly smaller photo */
-        height: 120px;
-        margin-bottom: 1rem; /* Adjust margin */
-    }
-     .course-overlay {
-         padding: 15px; /* Ensure padding is adequate */
-         /* Keep text styles */
-     }
-     .photo-placeholder {
-         width: 120px; /* Smaller placeholder */
-         height: 120px;
-         margin-bottom: 1rem;
-     }
-      .feature-card i {
-         /* Keep font size */
-         margin-bottom: 0.8rem;
-     }
-      .feature-card {
-          padding: 1.5rem; /* Adjust padding */
-      }
-
-    /* --- Image Banner (Mobile) --- */
-     .banner-container {
-         margin-top: 2rem;
-         padding: 1rem 0;
-     }
-    .banner {
-         height: 50vh; /* Reduce height significantly */
-    }
-    .banner .slider {
-        width: 150px; /* Smaller items */
-        height: 150px;
-        left: calc(50% - 75px); /* Recenter */
-        top: 20%; /* Adjust vertical position */
-        animation-duration: 45s; /* Slower animation */
-    }
-    .banner .slider .item {
-        /* Further reduce radius */
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(250px);
-    }
-
-     /* --- Contact (Mobile) --- */
-    .contact-details {
-        /* Keep font size */
-        line-height: 1.8; /* Adjust line height if needed */
-        text-align: center; /* Center align content */
-    }
-     .contact-details p {
-         word-break: break-word; /* Ensure long text/links wrap */
-     }
-     .contact-details a {
-         display: inline-block; /* Ensure links wrap nicely */
-     }
-
-    /* --- Footer (Mobile) --- */
-    footer {
-        padding: 1.5rem 1rem;
-        /* Keep text styles */
-    }
-}
-
-@media (max-width: 480px) {
-    /* Fine-tuning for very small screens - Layout only */
-    .logo-img {
-        width: 200px; /* Even smaller logo */
-    }
-    .hero {
-        height: 50vh; /* Shorter hero */
-    }
-     .champion-card {
-        flex-basis: 240px; /* Smaller cards */
-     }
-     .champions-grid {
-         gap: 0.8rem;
-     }
-      .banner {
-         height: 40vh;
-    }
-     .banner .slider {
-        width: 120px;
-        height: 120px;
-        left: calc(50% - 60px);
-    }
-    .banner .slider .item {
-        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(200px);
-    }
-    section {
-        padding: 1rem 0.8rem;
-    }
-    .contact-details {
-        /* Keep font size */
-        line-height: 1.7;
-    }
-}
-
-/* ========================================= */
-/* === END: Mobile Responsive Adjustments === */
-/* ========================================= */
